@@ -1,0 +1,16 @@
+. {
+  padding: 0px;
+  margin: 0px;
+}
+div {
+  gap: 10rem;
+  margin: 2%;
+}
+
+.intrduction {
+  display: flex;
+  text-align: center;
+}
+.body {
+  display: flex;
+}

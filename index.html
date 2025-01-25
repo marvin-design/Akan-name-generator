@@ -3,39 +3,41 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/style.css" />
-    <title>Name Genarator</title>
+    <title>Akan Name Generator</title>
+    <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <header class="introduction">
-      <h1>Submisssion form</h1>
-      <h2>Pleace enter required information below</h2>
+    <header>
+      <h1>Akan Name Generator</h1>
+      <p>
+        Akan name generator is a ghananian based name generatin tool that
+        determines ones name depending on their gender and day of birth
+      </p>
     </header>
-    <div class="body">
-      <div>
-        <form id="userForm" onsubmit="calculateAkanName(event)">
-          <label for="day">Day:</label>
-          <input type="number" id="day" min="1" max="31" required />
-        </form>
-      </div>
-      <div>
-        <label for="month">Month:</label>
-        <input type="number" id="month" min="1" max="12" required />
-      </div>
-      <div>
-        <label for="year">Year:</label>
-        <input type="number" id="year" min="1900" max="2025" required />
-      </div>
-      <div class="radio-group">
-        <label for="gender">Gender:</label>
-        <input type="radio" id="male" name="gender" value="male" required />
 
-        <label for="male">Male</label>
+    <form id="User-form">
+      <p>Fill the below fields to know your Akan name!</p>
+      <label for="day">Day of birth</label>
+      <input type="number" id="day" required />
 
-        <input type="radio" id="female" name="gender" value="female" required />
-        <label for="female">Female</label>
-      </div>
-      <script src="/index.js"></script>
-    </div>
+      <label for="month">Month of birth</label>
+      <input type="number" id="month" required />
+
+      <label for="year">Year of birth</label>
+      <input type="number" id="year" required />
+
+      <label for="gender">Gender</label>
+      <select id="gender" required>
+        <option value="disable selected">select your gender</option>
+        <option value="male">Male</option>
+        <option value="female">Female</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+    <div id="results" class="results"></div>
+    <output type="name"></output>
+
+    <script src="./index.js"></script>
   </body>
 </html>

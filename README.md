@@ -1,6 +1,6 @@
-#Akan name generator
+# Akan name generator
 
-##Description
+## Description
 
 The Akan Name Generator is a culturally inspired web application designed to help you discover traditional Akan names based on the day of birth and gender.
 
@@ -8,7 +8,7 @@ In Akan tradition, babies are given their first names according to the day of th
 
 Simply enter your date of birth and gender, and the generator will calculate your Akan name using a formula that incorporates the day of the week. Celebrate Ghanaian culture and uncover your unique name!
 
-##Author
+## Author
 
 David Marvin
 
